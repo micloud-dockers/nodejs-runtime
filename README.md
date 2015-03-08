@@ -30,3 +30,18 @@ $ npm start
 ```
 docker run -d -p 3000:3000 -v ~/project/dockerws/web:/data peihsinsu/nodejs-runtime
 ```
+
+### Debug
+
+If run the docker error without error return, you can use "docker logs" to show the execute message in instance.
+
+```
+docker logs [your-docker-id]
+```
+
+If your instance success running, you can use "-f" parameter to show log like "tail -f".
+
+```
+docker logs -f [your-docker-id]
+```
+
